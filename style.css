@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+  display: flex;
+}
+
+.guitar img {
+  height: auto;
+  width: 40em;
+}
+fieldset {
+  justify-self: center;
+  background-color: white;
+  box-shadow: 4px 2px 2px rgb(110, 109, 109);
+}
+
+.container {
+  background-color: white;
+  box-shadow: 4px 2px 2px rgb(110, 109, 109);
+  font-size: 30px;
+}
+
+.shadow input {
+  background-color: red;
+  border-radius: 4px;
+  margin-top: 2em;
+  padding: 10px;
+  margin-left: 6em;
+  color: aliceblue;
+  font-weight: 700;
+  border-style: none;
+  box-shadow: 4px 2px 2px rgb(110, 109, 109);
+}
