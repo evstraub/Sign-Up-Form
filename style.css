@@ -1,32 +1,127 @@
 body {
-  background-color: white;
+  background-color: rgb(29, 29, 29);
   display: flex;
 }
-
+@font-face {
+  font-family: "Norse Bold";
+  src: url("img/Norse-Bold.otf");
+}
 .guitar img {
   height: auto;
   width: 40em;
 }
-fieldset {
-  justify-self: center;
-  background-color: white;
-  box-shadow: 4px 2px 2px rgb(110, 109, 109);
+.inputs-section {
+  color: rgb(160, 158, 158);
+  background-color: rgb(50, 50, 51);
+  margin-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
-  background-color: white;
-  box-shadow: 4px 2px 2px rgb(110, 109, 109);
+  color: rgb(160, 158, 158);
+
+  background-color: rgb(50, 50, 51);
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
   font-size: 30px;
+  font-family: "Norse Bold";
+  padding: 25px;
+}
+.container strong {
+  color: rgb(197, 16, 16);
+}
+.odin-logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  width: 638px;
+  height: 15em;
+  position: fixed;
+  top: 300px;
+  left: 10px;
+}
+.odin-logo img {
+  display: flex;
+  height: 15em;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+.odin-logo span {
+  color: white;
+  font-size: 3em;
+  font-family: "Norse Bold";
+}
+.log-in {
+  font-family: "Norse Bold";
+}
+.inputs-section label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1px;
+  font-family: "Norse Bold";
+  font-size: larger;
+}
+.inputs-section input {
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 100%;
+  font-size: 25px;
+  margin-right: 32px;
 }
 
-.shadow input {
-  background-color: red;
-  border-radius: 4px;
-  margin-top: 2em;
-  padding: 10px;
-  margin-left: 6em;
-  color: aliceblue;
+.inputs-section h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Norse Bold";
+  color: rgb(197, 16, 16);
+}
+
+.inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 84px;
+  row-gap: 18px;
+  margin-bottom: 18px;
+}
+
+.inputs label {
+  display: block;
+}
+
+input.focus {
+  border: 1px solid rgb(197, 16, 16);
+  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#create-account {
+  margin-left: 48px;
+  margin-top: 32px;
+  border: none;
+  background-color: rgb(197, 16, 16);
+  padding: 12px 48px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: white;
   font-weight: 700;
-  border-style: none;
-  box-shadow: 4px 2px 2px rgb(110, 109, 109);
+  font-size: 1.1rem;
+}
+p.log-in {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 32px;
+  margin-left: 68px;
+}
+
+.log-in a {
+  color: rgb(197, 16, 16);
+  font-weight: bold;
+  text-decoration: none;
 }
